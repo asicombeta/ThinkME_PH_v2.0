@@ -2,6 +2,29 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+$primary: #fec818;
+$danger: #ff4136;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+
+// Create your own map
+$custom-colors: (
+  "color-thinkme": #fec818,
+  "grey-thinkme-light": #d9d9d9,
+  "grey-thinkme-middle": #a0a0a0,
+  "grey-thinkme-dark": #414042,
+  "thinkme-black": #000000
+
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
